@@ -26,7 +26,8 @@
 
 <h2>4. Market Potential Analysis</h2> <p>We consolidated sales data with demographic and cost data (rent) to determine which cities offer the best ROI for future investment.</p>
 
-<pre> -- Identifying top cities by revenue and coffee consumer density SELECT cr.city_name, total_revenue, cr.estimated_rent AS total_rent, ct.total_cx AS unique_customers, estimated_coffee_consumer_in_millions FROM city_rent AS cr JOIN city_table AS ct ON cr.city_name = ct.city_name ORDER BY 2 DESC; </pre>
+<pre> -- Identifying top cities by revenue and coffee consumer density 
+SELECT cr.city_name, total_revenue, cr.estimated_rent AS total_rent, ct.total_cx AS unique_customers, estimated_coffee_consumer_in_millions FROM city_rent AS cr JOIN city_table AS ct ON cr.city_name = ct.city_name ORDER BY 2 DESC; </pre>
 
 <h2>5. Final Recommendations</h2> <p>Based on the Exploratory Data Analysis, we recommend focusing expansion and marketing efforts on the following three cities:</p>
 
